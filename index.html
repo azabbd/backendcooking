@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<head>
+        <title>Cooking</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <header role="banner">
+
+
+                <!-- menu fixed-top-->
+                <div class="row main-navigation  p-1 bckclr">
+                    <div class="col-md-8 col-lg-8 col-sm-8 p-1">
+                
+                        <nav class="nav nav-pills  pull-left ">
+                            <a class="nav-item nav-link  "   href="index.html"><i class="fa fa-home" aria-hidden="true"></i> </a>
+                            <a class="nav-item nav-link  "  href="connexion.html">Connexion</a>
+                            
+                            <a class="nav-item nav-link   "  href="inscription.html">Inscription</a></nav>
+                    </div > 
+                    <div class="col-sm-4 col-md-4 col-lg-4  ">
+                        <form class="form-inline  my-lg-0"method="post" action="RechercheMenu.php?go">
+                        <input class="form-control mr-sm-2 rechercheMen" type="search" placeholder="Recherche" name="RechercheGlobale" aria-label="Search">
+                        <button type="submit"  class="btn btn-outline-success my-2 my-sm-0 butsearch rechercheMen"><i class="fa fa-search"></i></button>
+                        <!--button class="btn btn-outline-success my-2 my-sm-0 butsearch" type="submit" name="SubmitGlobale" >Rechercher</button-->
+                        
+                        </form>
+                    </div >  
+                    </div>
+                </div><!--.main-navigation-->
+                    
+                </header>
+                <div class="container page-container mt-3 "  >
+                <header role="banner">
+                <!-- logo title -->
+                <div class="row row-with-vspace site-branding">
+                        <div class="col-md-2 col-sm-1">
+                        </div>
+                    <div class="col-md-8 col-sm-6 site-title">
+                        <h1 class="site-title-heading">
+                            <a href="index.html" title="cooking Website" rel="home"><img src="images/logo-cooking.png" class="img-responsive" ></a></h1>
+                        <p><h3 class="site-title-heading clrfont" >miam miam, gloup gloup, laps laps</h3></p><br>
+                    </div>
+                
+                    <div class="col-md-2 d-none d-lg-block page-header-top-right pull-right">
+                        <div class="tagline"> 
+                            <h3 class="clrfont">Bienvenue!</h3>
+                            </div>
+                        <div class="sr-only">
+                            <a href="#content" title="Skip to content">Skip to content</a>
+                        </div>
+                        </div>
+                        
+                </div> <!-- logo title -->
+                
+                <!-- menu #f1e4ef-->
+                <div class="row main-navigation  mt-5">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg  nav-fill  navbar-light nvbrback"  >
+                            <a class="nav-link" href="index.html"><i class="icon-fixed-width icon-home"></i> Acceuil </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <div class="col-sm-8 col-md-8">
+                                <ul class="navbar-nav  ">
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="recettes2.html">Recettes</a>
+                                    </li>
+                                    <!--li class="nav-item">
+                                        <a class="nav-link  " href="menus.html">Menus</a>
+                                    </li-->
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Menus
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="Legume.php">Legumes</a>
+                                    <a class="dropdown-item" href="Viande.php">Viandes</a>
+                                    <a class="dropdown-item" href="poisson.php">Poisson</a>
+                                    <a class="dropdown-item" href="fruit.php">Fruit</a>
+                                    </div>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link  " href="desserts.php">Desserts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="Minceur.php">Minceur</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="Atelier.php">Atelier</a>
+                                    </li>
+                                    <!--li class="nav-item  ">
+                                        <a class="nav-link  " href="connexion.php">Connexion</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="inscription.php">Inscription</a>
+                                    </li-->
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 d-md-block d-lg-none    ">
+                            <form class="form-inline my-2 my-lg-0"method="post" action="RechercheMenu.php?go">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Recherche" name="RechercheGlobale" aria-label="Search" >
+                            <button type="submit"  class="btn btn-outline-success my-2 my-sm-0 butsearch"><i class="fa fa-search"></i></button>
+                            <!--button class="btn btn-outline-success my-2 my-sm-0 butsearch" type="submit" name="SubmitGlobale" >Rechercher</button-->
+                
+                            </form>
+                            </div >   
+                                    
+                            </div> <!-- menu -->
+                        </nav>
+                    </div>
+                </div><!--.main-navigation-->
+                    
+                </header>
+ <!-- carrousel -->
+  <div class="box mt-5 mb-5">
+      <div id="myCarousel" class="carousel slide  " data-ride="carousel">
+            <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+           
+            <!--Wrapper for slides-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+                <a href="#"><img src="photos/recettes/carottes-glacees-orange.jpg" alt="carottes glacees orange" class="img-thumbnail"></a>
+            <div class="carousel-caption">
+              <h3><a href="carottes-glacees-orange.html"style="color: #9D0461;">carottes glacees orange</a></h3><br>
+              <button class="btn btn-outline-success my-2 my-sm-0 butsearch" type="submit" ><h4>
+                  <a href="carottes-glacees-orange.html">Voir plus</a></h4></button>
+            </div>
+            </div>
+      
+          <div class="carousel-item">
+                <a href="#"><img src="photos/recettes/creme-petits-poids.jpg" alt="creme petits poids" class="img-thumbnail"></a>
+            <div class="carousel-caption">
+                <h3><a href="creme-petits-poids.html" style="color: #9D0461;" >creme petits poids</a></h3><br>
+                <button class="btn btn-outline-success my-2 my-sm-0 butsearch" type="submit" ><h4>
+                    <a href="carottes-glacees-orange.html">Voir plus</a></h4></button>
+              </div>
+          </div>
+      
+          <div class="carousel-item">
+                <a href="#"><img src="photos/recettes/marmelade-carottes.jpg" alt="marmelade carottes" class="img-thumbnail"></a>
+            <div class="carousel-caption">
+                <h3><a href="marmelade-carotte.html" style="color: #9D0461;">marmelade carottes</a></h3><br>
+                <button class="btn btn-outline-success  my-2 my-sm-0 butsearch" type="submit" ><h4>
+                    <a href="carottes-glacees-orange.html">Voir plus</a></h4></button>
+              </div>
+          </div>
+        </div>
+          
+            <!-- Left and right controls -->
+            
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"  aria-hidden="true" ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"  aria-hidden="true" ></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </div><!-- carrousel -->
+
+<!-- Dernière Recette ajouttée -->
+  <div class="box col-12 mt-3 mb-3  mt-5">
+    <span><h3 style="color: #9D0461;">Dernière Recette ajouttée</h3></span>
+  </div>
+
+  <div class="row mb-3  mx-auto" >
+      <div class="  col-lg-9 col-md-12 col-sm-12   mb-5    text-center mb-3" >
+            <a href="#"><img src="photos/recettes/quiche-legume-printemps.jpg" alt="quiche-legume-printemps" class=" mb-3 img-fluid img-thumbnail"></a>
+      <span><h6 style="color:rgb(194, 194, 194); text-align: center;"  > Catégorie</h6></span>
+      <span><h2 style="  text-align: center;"> <a href="quiche-legume-printemps.html" style="color: #9D0461;">Titre</a></h2></span>
+      <span><h6 style="color:rgb(194, 194, 194); text-align: center; "> Date publication</h6></span>
+      <span><p> 'Vous ne connaissiez pas le mariage de la carotte et de l'orange ?
+             Alors permettez-nous de vous donner l''eau À la bouche avec cette recette de carottes glacÉes,
+             acidulÉes et lÉgÈrement sucrÉes qui donnera du peps À votre repas du jour..  </p></span>
+             <button class="aclass btn btn-outline-success my-2 my-sm-0 butsearch  mt-3 " type="submit" ><h4>
+                    <a href="carottes-glacees-orange.html">Voir plus</a></h4></button>
+             
+    </div> 
+<!-- A propos de nous -->
+    <div class="  col-lg-3 col-md-12 col-sm-12  text-center   d-block mb-3 " >
+        <div class="row mx-auto     center-block text-center"   style="background:#fff;"  >
+           <h4  class="text-center" style="color: #9D0461;" >A propos de nous</h4> 
+          <p></p>Depuis 8 ans maintenant, l’entreprise Cooking  lorum ispum lorum ispum lorum ispum lorum ispum lorum ispum lorum ispum lorum ispum lorum ispum
+          lorum ispum  lorum ispum  lorum ispum  lorum ispum  lorum ispum  lorum ispum  lorum ispum  lorum ispum  lorum ispum  lorum ispum  lorum ispum 
+          lorum ispum  lorum ispum  lorum ispum  lorum ispum  lorum ispum  lorum ispum </p>
+        
+         
+<!-- Nous suivre -->
+        
+            
+             
+            <div class="row mx-auto">
+               
+            <a class="btn   btn-social btn-twitter btn-sm">
+                    <span class="fa fa-twitter social"></span> </a>
+            <a class="btn   btn-social btn-facebook btn-sm">
+                    <span class="fa fa-facebook social"></span> </a>
+            <a class="btn   btn-social btn-google-plus btn-sm">
+                    <span class="fa fa-google-plus social"></span> </a>
+            <a class="btn   btn-social btn-youtube btn-sm">
+                    <span class="fa fa-youtube social"></span> </a>
+                </div>
+                </div>
+         
+
+
+    </div>
+</div>
+
+
+
+<div class="box col-12 mt-3 mb-3    ">
+        <span><h3 style="color: #9D0461;">Les recettes du jour</h3></span>
+</div>
+<div class="row mb-3 ">
+<!-- recettes du jour -->
+ 
+<div class="   pl-2 col-lg-3 col-md-6 col-sm-12   mb-5    text-center">
+        <a href="#"> <img src="photos/recettes/quiche-legume-printemps.jpg" alt="quiche-legume-printemps" class="mb-2 img-thumbnail img-fluid"></a>
+        <span><h6 style="color:rgb(194, 194, 194); text-align: center;"  > Catégorie</h6></span>
+        <span><h2 style="  text-align: center;"> <a href="quiche-legume-printemps.html" style="color: #9D0461;">Titre</a></h2></span>
+        <span><h6 style="color:rgb(194, 194, 194); text-align: center; "> Date publication</h6></span>
+        <span><p> 'Vous ne connaissiez pas le mariage de la carotte et de l'orange ?
+               Alors permettez-nous de vous donner l''eau À la bouche avec cette recette de carottes glacÉes,
+               acidulÉes et lÉgÈrement sucrÉes qui donnera du peps À votre repas du jour..  </p></span>
+               <button class="aclass btn btn-outline-success my-2 my-sm-0 butsearch  " type="submit" ><h4>
+                    <a href="carottes-glacees-orange.html">Voir plus</a></h4></button>
+                    <hr>
+        <div class="  pl-2 col-12    center-block text-center mt-3 "  >
+                <a href="#"><img src="photos/gravatars/annie.png" alt="quiche-legume-printemps" class="img-thumbnail img-fluid"></a>
+            <span><h6 style="color:rgb(194, 194, 194); text-align: center;"  > proposée par <a href="#"> Membre</a></h6></span>   
+        </div>   
+        <hr>
+</div><!-- recette 1 -->
+<div class="   pl-2 col-lg-3 col-md-6 col-sm-12   mb-5    text-center">
+        <a href="#"><img src="photos/recettes/quiche-legume-printemps.jpg" alt="quiche-legume-printemps" class="mb-2 img-thumbnail img-fluid"></a>
+        <span><h6 style="color:rgb(194, 194, 194); text-align: center;"  > Catégorie</h6></span>
+        <span><h2 style="  text-align: center;"> <a href="quiche-legume-printemps.html" style="color: #9D0461;">Titre</a></h2></span>
+        <span><h6 style="color:rgb(194, 194, 194); text-align: center; "> Date publication</h6></span>
+        <span><p> 'Vous ne connaissiez pas le mariage de la carotte et de l'orange ?
+               Alors permettez-nous de vous donner l''eau À la bouche avec cette recette de carottes glacÉes,
+               acidulÉes et lÉgÈrement sucrÉes qui donnera du peps À votre repas du jour..  </p></span>
+               <button class="aclass btn btn-outline-success my-2 my-sm-0 butsearch  " type="submit" ><h4>
+                    <a href="carottes-glacees-orange.html">Voir plus</a></h4></button>
+                    <hr>
+        <div class="  pl-2 col-12    center-block text-center mt-3 "  >
+                <a href="#"><img src="photos/gravatars/annie.png" alt="quiche-legume-printemps" class="img-thumbnail img-fluid"></a>
+            <span><h6 style="color:rgb(194, 194, 194); text-align: center;"  > proposée par <a href="#"> Membre</a></h6></span>   
+        </div>   
+        <hr>
+</div><!-- recette 2 -->
+<div class="   pl-2 col-lg-3 col-md-6 col-sm-12   mb-5    text-center">
+        <a href="#"> <img src="photos/recettes/quiche-legume-printemps.jpg" alt="quiche-legume-printemps" class="mb-2 img-thumbnail img-fluid"></a>
+        <span><h6 style="color:rgb(194, 194, 194); text-align: center;"  > Catégorie</h6></span>
+        <span><h2 style="  text-align: center;"> <a href="quiche-legume-printemps.html" style="color: #9D0461;">Titre</a></h2></span>
+        <span><h6 style="color:rgb(194, 194, 194); text-align: center; "> Date publication</h6></span>
+        <span><p> 'Vous ne connaissiez pas le mariage de la carotte et de l'orange ?
+               Alors permettez-nous de vous donner l''eau À la bouche avec cette recette de carottes glacÉes,
+               acidulÉes et lÉgÈrement sucrÉes qui donnera du peps À votre repas du jour..  </p></span>
+               <button class="aclass btn btn-outline-success my-2 my-sm-0 butsearch  " type="submit" ><h4>
+                    <a href="carottes-glacees-orange.html">Voir plus</a></h4></button>
+                    <hr>
+        <div class="  pl-2 col-12    center-block text-center mt-3 "  >
+                <a href="#"><img src="photos/gravatars/annie.png" alt="quiche-legume-printemps" class="img-thumbnail img-fluid"></a>
+            <span><h6 style="color:rgb(194, 194, 194); text-align: center;"  > proposée par <a href="#"> Membre</a></h6></span>   
+        </div>   
+        <hr>
+</div><!-- recette 3 -->
+<!-- newsletter -->
+    <div class=" mb-3 pl-3 col-lg-3 col-md-6 col-sm-12  text-center thumbnail center well well-sm text-center">
+        <div id="newsletter">
+            <form action="">
+                <div class="seal">
+                <i class="fa fa-envelope-o"></i>
+                </div>
+                <div class="title">
+                        <h4>  ABONNEZ-VOUS À NOTRE NEWSLETTER </h4>
+                </div>
+                <label for="email">                    
+                    Abonnez-vous à notre newsletter et recevez de nouvelles recettes dans votre
+                        boîte de réception. 
+                    </label>
+                    <input type="text" placeholder="Nom" />
+                    </label>
+                    <input type="text" placeholder="Prénom" />
+                    </label>
+                    <input type="text" placeholder="Email" />
+                    <input type="submit" value="S'abonner" class="btn btn-outline-success my-2 my-sm-0 butsearch" />
+                    </form>
+        </div>
+        <div class="shadow"></div><!-- newsletter -->
+<!-- partage recette -->
+        <div class="  pl-2 col-12 pb-3   center-block text-center mt-3  " style="background:#fff;" >
+                <form action="" method="post" role="form">
+                    <span><h4 style="color:#9D0461; text-align: center;"  > Vous avez une recette à partager?</h4></span>
+                    <input type="submit" value="C'est par ici!" class="btn btn-outline-success my-2 my-sm-0 butsearch" />
+                </form> 
+                
+        </div><!-- partage recette -->
+        <div class="shadow"></div>
+    </div>
+</div>
+
+
+ </div><!--.page-container-->
+</body>
+
+
+<footer class="page-footer font-small  ">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-10 offset-lg-2 col-md-10 offset-md-2 offset-sm-1  py-5"> 
+                    <a href="#"><img alt="Brock Script Regular" src="images/cookingtitle2.png" class="imbt" ></a>
+            <span><h5 style="color:rgb(194, 194, 194); text-align: center;"  > Pour nous joindre: <a href="#"> azaryabboud@gmail.com</a></h5></span>   
+        </div>
+    </div>
+
+<div class="row">
+
+        <!-- Grid column -->
+         
+        <div class="col-lg-7 offset-lg-5 col-md-8 offset-md-4 col-sm-8 offset-sm-4 col-xs-8 offset-xs-4 py-5"> 
+          <div class="mb-5 flex-center">
+                <a href="#" class="btn btn-social-icon btn-facebook" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x"></i> </span> </a>
+                    <a href="#" class="btn btn-social-icon btn-twitter" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i> </span> </a>
+        
+                    <a href="#" class="btn btn-social-icon btn-youtube" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-youtube-square fa-stack-1x"></i></span></a>
+                    <a href="#" class="btn btn-social-icon btn-google-plus" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-google-plus-square fa-stack-1x"></i></span></a>
+                    
+                     
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+      <div class="navbarfooter">
+            <a href="index.html" class="active">Acceuil</a> | 
+            <a href=" Recettes.html">Recettes</a> | 
+            <a href=" Inscription.html">Inscription</a> | 
+            <a href=" Connexion.html">Connexion</a> | 
+            
+            <a href=" contact.html">Contact</a>
+          </div>
+          
+        <!-- Copyright -->
+<div class="footer-copyright text-center py-3 mb-3">© 2019 Copyright:
+    <a href="#"> Azary ABBOUD</a>
+</div>
+      <!-- Copyright -->
+    </div>
+</footer>
+</html>			
+ 

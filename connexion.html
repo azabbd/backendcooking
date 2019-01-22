@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+    <title>Cooking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <header >
+
+
+                <!-- menu fixed-top-->
+                <div class="row main-navigation  p-1 bckclr">
+                    <div class="col-md-8 col-lg-8 col-sm-8 p-1">
+                
+                        <nav class="nav nav-pills  pull-left ">
+                            <a class="nav-item nav-link  "   href="index.html"><i class="fa fa-home" aria-hidden="true"></i> </a>
+                            <a class="nav-item nav-link  "  href="connexion.html">Connexion</a>
+                            
+                            <a class="nav-item nav-link   "  href="inscription.html">Inscription</a></nav>
+                    </div > 
+                    <div class="col-sm-4 col-md-4 col-lg-4  ">
+                        <form class="form-inline  my-lg-0" method="post" action="RechercheMenu.php?go">
+                        <input class="form-control mr-sm-2  rechercheMen" type="search" placeholder="Recherche" name="RechercheGlobale" aria-label="Search">
+                        <button type="submit"  class="btn btn-outline-success my-2 my-sm-0 butsearch rechercheMen"><i class="fa fa-search"></i></button>
+                        <!--button class="btn btn-outline-success my-2 my-sm-0 butsearch" type="submit" name="SubmitGlobale" >Rechercher</button-->
+                        
+                        </form>
+                    </div >  
+                    </div>
+                </div><!--.main-navigation-->
+                    
+                </header>
+                <div class="container page-container mt-3 "  >
+                <header  >
+                <!-- logo title -->
+                <div class="row row-with-vspace site-branding">
+                        <div class="col-md-2 col-sm-1">
+                        </div>
+                    <div class="col-md-8 col-sm-6 site-title">
+                        <h1 class="site-title-heading">
+                            <a href="index.html" title="cooking Website" rel="home"><img src="images/logo-cooking.png" alt="logo-cooking" class="img-responsive" ></a></h1>
+                       <h3 class="site-title-heading clrfont" >miam miam, gloup gloup, laps laps</h3> <br>
+                    </div>
+                
+                    <div class="col-md-2 d-none d-lg-block page-header-top-right pull-right">
+                        <div class="tagline"> 
+                            <h3 class="clrfont">Bienvenue!</h3>
+                            </div>
+                        <div class="sr-only">
+                            <a href="#content" title="Skip to content">Skip to content</a>
+                        </div>
+                        </div>
+                        
+                </div> <!-- logo title -->
+                
+                <!-- menu #f1e4ef-->
+                <div class="row main-navigation  mt-5">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg  nav-fill  navbar-light nvbrback"  >
+                            <a class="nav-link" href="index.html"><i class="icon-fixed-width icon-home"></i> Acceuil </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <div class="col-sm-8 col-md-8">
+                                <ul class="navbar-nav  ">
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="recettes2.html">Recettes</a>
+                                    </li>
+                                    <!--li class="nav-item">
+                                        <a class="nav-link  " href="menus.html">Menus</a>
+                                    </li-->
+                                    <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Menus
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="Legume.php">Legumes</a>
+                                    <a class="dropdown-item" href="Viande.php">Viandes</a>
+                                    <a class="dropdown-item" href="poisson.php">Poisson</a>
+                                    <a class="dropdown-item" href="fruit.php">Fruit</a>
+                                    </div>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link  " href="desserts.php">Desserts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="Minceur.php">Minceur</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="Atelier.php">Atelier</a>
+                                    </li>
+                                    <!--li class="nav-item  ">
+                                        <a class="nav-link  " href="connexion.php">Connexion</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link  " href="inscription.php">Inscription</a>
+                                    </li-->
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 d-md-block d-lg-none    ">
+                            <form class="form-inline my-2 my-lg-0" method="post" action="RechercheMenu.php?go">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Recherche" name="RechercheGlobale" aria-label="Search" >
+                            <button type="submit"  class="btn btn-outline-success my-2 my-sm-0 butsearch"><i class="fa fa-search"></i></button>
+                            <!--button class="btn btn-outline-success my-2 my-sm-0 butsearch" type="submit" name="SubmitGlobale" >Rechercher</button-->
+                
+                            </form>
+                            </div >   
+                                    
+                            </div> <!-- menu -->
+                        </nav>
+                    </div>
+                </div><!--.main-navigation-->
+                    
+                </header>
+<div class="row  text-center   mt-3 p-2 mb-5 "   >
+    <div class="login-form pt-3 " >
+        <form   method="post"  >
+            <div class="title">
+                <h4 class="forttle"  > Connexion  </h4>
+            </div>      
+            <div class="form-group">
+                <input type="text" class="form-control  mt-5 brrd" name="Username" placeholder="login" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control mb-5 brrd" name="Password" placeholder="mdp" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-success my-2 py-2 my-sm-0 butsearch mb-4" name="Seconnecter">Se connecter</button>
+            </div>
+            <div class="clearfix custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                <label class="custom-control-label" for="defaultUnchecked" name="Sesouvenir">Se souvenir de moi</label>
+                <a href="requestpass" class="pull-right" name="Mdpoublie"  >Mdp oublié?</a>
+            </div>
+            </form>
+        <p></p>
+        <p class="text-center"><a href="inscription.html"  >Créer un compte</a></p>
+    </div>
+</div>   <!--se connecter-->
+    
+</div> 
+ 
+</body>
+<footer class="page-footer font-small  ">
+<div class="container">
+    <div class="row">
+        
+        <div class="col-lg-10 offset-lg-2 col-md-10 offset-md-2 offset-sm-1  py-5"> 
+                <a href="#"><img alt="Brock Script Regular" src="images/cookingtitle2.png" class="imbt" ></a>
+         <h5 class="nsjoindre"  > Pour nous joindre: <a href="#"> azaryabboud@gmail.com</a></h5> 
+        </div>
+    </div>
+
+<div class="row">
+
+    <!-- Grid column -->
+        
+    <div class="col-lg-7 offset-lg-5 col-md-8 offset-md-4 col-sm-8 offset-sm-4 col-xs-8 offset-xs-4 py-5"> 
+        <div class="mb-5 flex-center">
+            <a href="#" class="btn btn-social-icon btn-facebook" target="_blank">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i> </span> </a>
+                <a href="#" class="btn btn-social-icon btn-twitter" target="_blank">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i> </span> </a>
+    
+                <a href="#" class="btn btn-social-icon btn-youtube" target="_blank">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-youtube-square fa-stack-1x"></i></span></a>
+                <a href="#" class="btn btn-social-icon btn-google-plus" target="_blank">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-google-plus-square fa-stack-1x"></i></span></a>
+                
+                    
+        </div>
+    </div>
+    <!-- Grid column -->
+
+</div>
+    <!-- Grid row-->
+
+    <div class="navbarfooter">
+        <a href="index.html" class="active">Acceuil</a> | 
+        <a href=" Recettes.html">Recettes</a> | 
+        <a href=" Inscription.html">Inscription</a> | 
+        <a href=" Connexion.html">Connexion</a> | 
+        
+        <a href=" contact.html">Contact</a>
+        </div>
+        
+    <!-- Copyright -->
+<div class="footer-copyright text-center py-3 mb-3">© 2019 Copyright:
+<a href="#"> Azary ABBOUD</a>
+</div>
+    <!-- Copyright -->
+</div>
+</footer>
+</html>
