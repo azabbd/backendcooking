@@ -6,9 +6,8 @@
 include ('sessioninclude.php');
 include ('DbConnect.php');
 ?>
-
-  <body  >
-  <div class="container page-container mt-3 "  style="padding-top: 60px;">
+  <body>
+  <div class="container page-container mt-3 " >
   <?php
   include ('includemenu.php');
 if(isset($_SESSION))

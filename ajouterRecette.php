@@ -11,6 +11,15 @@ include ('DbConnect.php');
 
 <?php
 include ('includemenu.php');
+if(!isset($_SESSION['Username']))
+{
+    ?>
+    <script>
+        window.location.href = 'connexion.php';
+    </script>
+    <?php
+    
+}
 if(!empty($_POST['tempsPreparation']))
 {
     $tptempsPreparation = filter_input(INPUT_POST,'tempsPreparation',FILTER_SANITIZE_STRING);

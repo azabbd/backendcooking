@@ -255,7 +255,8 @@ echo '</a></h6></div>
 <div class="  pl-2 col-12 pb-3   center-block text-center  m  " style="background:#fff;" >
                 <form action="" method="post" role="form">
                     <span><h4 style="color:#9D0461; text-align: center;"  > Vous avez une recette à partager?</h4></span>
-                    <input type="submit" value="C'est par ici!"style="border-radius:1rem;width:70%" class="btn btn-outline-success my-2 my-sm-0 butsearch" />
+                    <input type="button" id="goaddrecette" value="  par ici!" style="border-radius:1rem;width:70%" class="btn btn-outline-success my-2 my-sm-0 butsearch" />
+
                 </form> 
                 
         </div><!-- partage recette -->
@@ -272,11 +273,11 @@ echo '</a></h6></div>
                     Abonnez-vous à notre newsletter et recevez de nouvelles recettes dans votre
                         boîte de réception. 
                     </label>
-                    <input type="text" placeholder="Nom" style="border-radius:1rem;width:60%"name= "nomNews"required="true"/>
+                    <input type="text" placeholder="Nom" name= "nomNews" required="true"/>
                     </label>
-                    <input type="text" placeholder="Prénom"style="border-radius:1rem;width:60%" name="prenomNew"required="true"/>
+                    <input type="text" placeholder="Prénom"  name="prenomNew" required="true"/>
                     </label>
-                    <input type="text" placeholder="Email" style="border-radius:1rem;width:90%"name="EmailNews" required="true"/>
+                    <input type="text" placeholder="Email" name="EmailNews" required="true"/>
                     <!--input type="submit" value="S'abonner" name ='SubmitNews' class="btn btn-outline-success my-2 my-sm-0 butsearch" /-->
                     <button class="btn btn-outline-success my-2 my-sm-0 butsearch" type="submit" name="SubmitNews" >S'abonner</button>
             </form>
@@ -295,23 +296,14 @@ include ('sessionincludeFooter.php');
 ?>
 </html>			
  
-
-<!--
 <script>
+    $('document').ready(function(){
+    $("#goaddrecette").click(function(){
+        window.location.href = 'ajouterRecette.php';
+    });
+    });
+        
+ 
+</script>
 
-        document.getElementById("carouselJS").onclick=function()
-        { 
-
-            setInterval(function(){
-                myNode =  document.getElementById('carouselJS');
-                myNode.innerHTML ='';
-
-
-
-
-            },5000);
-           
-  }
-
-        </script>
-        -->
+       
